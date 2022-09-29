@@ -1,0 +1,24 @@
+{
+  "description": "Add dark mode to active tab",
+  "manifest_version": 2,
+  "name": "Scurire",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/color-32.svg"
+  },
+
+  "permissions": ["activeTab"],
+
+  "browser_action": {
+    "default_icon": "icons/color-32.svg",
+    "theme_icons": [
+      {
+        "light": "icons/color-32-light.svg",
+        "dark": "icons/color-32.svg",
+        "size": 32
+      }
+    ],
+    "default_title": "Scurire",
+    "default_popup": "popup/scurire.html"
+  }
+}
